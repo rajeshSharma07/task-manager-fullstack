@@ -1,0 +1,79 @@
+.home-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #0f172a;
+    color: #e2e8f0;
+    font-family: Arial, sans-serif;
+}
+
+.home-page .navbar {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.home-content h1 {
+    margin: 0 0 14px;
+    font-size: 42px;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.home-content p {
+    margin: 0;
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+
+.home-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    height: 44px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.primary-btn {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.primary-btn:hover {
+    background: #cbd5e1;
+}
+
+.secondary-btn {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #475569;
+}
+
+.secondary-btn:hover {
+    background: #334155;
+}
