@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {useState} from "react";
 import axios from "axios";
 import "./Register.css";
@@ -5,6 +6,8 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 function Register(){
+
+    const navigate = useNavigate();
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -33,7 +36,8 @@ function Register(){
 
             console.log(response.data);
             setSuccess(response.data.message);
-
+           navigate("/login");
+           
         }catch (error){
             setError(error.response?.data?.message || "Registration failed");  
         }finally {
